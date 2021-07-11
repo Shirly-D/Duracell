@@ -107,6 +107,16 @@ li {
   Header styling starts here
 =================================*/
 
+header {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header-section img {
+  width: 100%;
+  margin: 0 auto;
+  
+}
 
 
 
