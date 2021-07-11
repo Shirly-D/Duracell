@@ -107,18 +107,85 @@ li {
   Header styling starts here
 =================================*/
 
-header {
+header .wrapper {
+  width: 100%;
+  max-width: 100%;
+}
+.header-section {
   width: 100%;
   margin: 0 auto;
+  position: relative;
 }
 
-.header-section img {
-  width: 100%;
-  margin: 0 auto;
-  
+.header-logo figure {
+  width: 9%;
+  position: absolute;
+  top: 20px;
+  left: 10%;
 }
 
+.header-logo a {
+  text-indent: -999px;
+}
 
+.header-logo img {
+  float: left;
+}
+
+.header-text {
+  float: right;
+  position: relative;
+  top: -50px;
+  display: flex;
+  right: 10%;
+}
+
+.header-text li {
+  flex-basis: 250px;
+  text-transform: capitalize;
+}
+
+.header-text a {
+  color: #fff;
+}
+
+.header-li-1 {
+  font-style: italic; 
+}
+
+.header-li-1::after {
+  content: " ";
+  width: 1em;
+  display: inline-block;
+}
+
+.header-li-2::before{
+  content: "\2022";
+  color: #CEEF27;
+  display: inline-block;
+  width: 1em;
+}
+
+.header-li-2::after {
+  content: " ";
+  border-right: 1px solid #fff;
+  margin-left: 10px;
+}
+
+.header-slogan {
+  text-transform: uppercase;
+  color: #fff;
+  margin-left: 10px;
+}
+
+.header-slogan span {
+  display: block;
+  font-size: large;
+}
+
+.slogan-text {
+  color: #CEEF27;
+}
 
 
 
@@ -129,6 +196,17 @@ header {
 /*=================================
   main styling starts here
 =================================*/
+
+.banner-section {
+  position: relative;
+}
+
+.banner-section .wrapper {
+  width: 100%;
+  max-width: 100%;
+}
+
+
 
 
 
