@@ -110,34 +110,35 @@ li {
 header .wrapper {
   width: 100%;
   max-width: 100%;
+  position: relative;
 }
+
 .header-section {
   width: 100%;
   margin: 0 auto;
-  position: relative;
 }
 
-.header-logo figure {
-  width: 9%;
-  /* position: absolute; */
-  top: 20px;
-  left: 10%;
-}
+.header-part {
+  width: 100%;
+  position: absolute;
+  top: 18px;
+} 
 
-.header-logo a {
-  text-indent: -999px;
+.header-logo h1{
+  width: 10%;
+  position: absolute;
+  margin-left: 10%;
 }
 
 .header-logo img {
-  float: left;
-}
+  text-indent: -999px;
+} 
 
 .header-text {
   float: right;
-  position: relative;
-  top: -50px;
   display: flex;
-  right: 10%;
+  margin-right: 10%;
+
 }
 
 .header-text li {
@@ -206,14 +207,118 @@ header .wrapper {
   max-width: 100%;
 }
 
-.banner-image {
+.banner-text {
+  text-transform: uppercase;
+  font-size: 40px;
+  color: #fff;
+  font-weight: bold;
+  position: absolute;
+  top: 30px;
+  left: 28%;
+}
+
+.banner-section p {
+  color: #787878;
+  position: absolute;
+  font-size: 20px;
+  top: 85px;
+  left: 23%;
+}
+
+.banner-text span {
+  color: #CEEF27;
+}
+
+.banner-ul {
+  position: absolute;
+  top: 160px;
+  display: flex;
+  margin: 0 13%;
+  flex-wrap: wrap;
+}
+
+.banner-ul li {
+  flex-basis: 32%;
+  border: 1px solid #787878;
+  z-index: 3;
+}
+
+.work-part .wrapper {
+  width: 100%;
+  max-width: 100%;
+}
+
+.work-part .wrapper {
+  position: relative;
+}
+
+.work-section {
+  position: absolute;
+  top: 80px;
+  left: 40%;
+  text-transform: uppercase;
+  font-size: 35px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.work-section span {
+  color: #CEEF27;
+}
+
+.work-part ul {
+  width: 100%;
+  display: flex;
   position: absolute;
 }
 
+.work-part li {
+  width: 56%;
+  flex-basis: 100%;
+}
 
-.tttt {
+.work-li-1 {
+  position: absolute;
 
 }
+
+.work-li-2 {
+  position: absolute;
+  right: 0;
+}
+
+.work-li-1 p {
+  position: absolute;
+  top: 40px;
+  right: 6%;
+}
+
+.work-li-1 span , .work-li-2 span {
+  display: block;
+  text-align: center;
+}
+
+.work-li-2 p {
+  position: absolute;
+  bottom: 50px;
+  left: 10%;
+}
+
+
+.section-text::first-letter {
+  text-transform: capitalize;
+}
+
+.section-text {
+  font-size: 20px;
+  color: #fff;
+}
+
+.section-text span {
+  text-transform: capitalize;
+  color: #CEEF27;
+}
+
 
 
 
@@ -243,7 +348,40 @@ header .wrapper {
 
 /*media query starts*/
 /*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
+@media only screen and (max-width:1024px) {
+  .header-text {
+    display: none;
+  }
+
+  .banner-section {
+    position: relative;
+  }
+
+  .banner-text {
+    font-size: 25px;
+    position: absolute;
+    left: 15%;
+  }
+
+  .banner-section p {
+    font-size: 15px;
+    position: absolute;
+    left: 13%;
+    
+  }
+
+}
+
+@media only screen and (max-width:540px){
+
+  .banner-ul {
+    display: flex;
+  }
+
+  .banner-ul li {
+    flex-basis: 100%;
+
+  }
 
 
 
