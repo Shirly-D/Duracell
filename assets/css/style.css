@@ -321,13 +321,6 @@ header .wrapper {
 
 
 
-
-
-
-
-
-
-
 /*=================================
   main styling ends here
 =================================*/
@@ -358,21 +351,27 @@ header .wrapper {
   }
 
   .banner-text {
-    font-size: 25px;
+    font-size: 30px;
     position: absolute;
-    left: 15%;
+    left: 20%;
   }
 
   .banner-section p {
     font-size: 15px;
     position: absolute;
-    left: 13%;
+    left: 15%;
     
   }
 
+ 
+
 }
 
-@media only screen and (max-width:540px){
+@media only screen and (max-width:768px){
+
+  .banner-section {
+    height: 1757px;
+  }
 
   .banner-ul {
     display: flex;
@@ -380,7 +379,14 @@ header .wrapper {
 
   .banner-ul li {
     flex-basis: 100%;
+    align-items: center;
 
+  }
+
+  .work-section {
+    position: absolute;
+    font-size: 25px;
+    left: 30%;
   }
 
 
